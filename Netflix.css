@@ -1,0 +1,229 @@
+Netflix.css
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  overflow: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logo{
+  float:left;
+  display: inline-block;
+  background-color: #ff0000;
+  margin-right:25px;
+  padding: 25px;
+}
+
+.left-menu ol{
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 25px;
+}
+
+.left-menu ol li{
+  display: inline-block;
+  padding-left:20px;
+  color: white;
+}
+
+.left-menu ol li a{
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+.left-menu ol li a.drop-down{
+  color: red;
+}
+
+.left-menu{
+  float:left;
+  display: inline-block;
+  /*background-color:blue;*/
+  margin-left:25px;
+}
+
+
+.right-menu{
+  float:right;
+  display: inline-block;
+  /*background-color: yellow;*/
+  padding: 25px;
+}
+
+.right-menu ol{
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right-menu ol li{
+  display: inline-block;
+  padding-left:20px;
+  color: white;
+}
+ /*.header a{
+  font-family: san-serif}*/
+
+.right-menu ol li a{
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+.left-menu ol li a:hover, .right-menu ol li a:hover{
+  color:red;
+}
+
+.large-image{
+  background: url(https://occ-0-901-1001.1.nflxso.net/art/2fc60/e777f28d58e61523dee4d15d12831b29efd2fc60.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding: 150px 25px;
+}
+
+
+.desription-box h1{
+  font-weight: 700px;
+  font-size: 60px;
+  font-family: serif;
+  margin:0;
+}
+
+.desription-box h3{
+  font-weight: 300px;
+  font-size:25px;
+  font-family:helvetica;
+}
+
+
+.desription-box h4{
+  font-family:helvetica;
+  margin: 0;
+}
+
+.desription-box p{
+  font-weight: 100px;
+  font-size:18px;
+  font-family:helvetica;
+}
+
+.button-1{
+  display: inline-block;
+  padding:12px 20px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.button-1:hover{
+  background: rgba(0,0,0,.6);
+}
+
+.button-2:hover{
+  background: rgba(0,0,0,.6);
+  border: 2px solid rgba(0,0,0,.6);
+}
+
+.button-2{
+  display: inline-block;
+  padding:10px 18px;
+  border:2px solid #000;
+  cursor: pointer;
+}
+
+.video-section{
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+
+.row{
+  width: 100%;
+  font-size:0;
+}
+
+.video-boxes{
+  display: inline-block;
+  background: red;
+  width: 300px;
+  margin: 2.5%;
+  min-height: 150px;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.video-boxes p{
+  display: none;
+}
+
+#video1{
+background:url("https://postergirlpress.com/wp-content/uploads/2018/04/horizontal-movie-posters-bane-batman-standoff-the-dark-knight-rises-wall-poster1.jpg");
+background-size: cover;
+}
+
+#video2{
+background:url("https://postergirlpress.com/wp-content/uploads/2018/04/horizontal-movie-posters-elegant-panoramic-movie-posters-and-cool-ideas-of-movie-poster-horizontal-13.jpg");
+background-size: cover;
+}
+
+#video3{
+background:url("http://cdn.collider.com/wp-content/uploads/clash-of-the-titans-movie-poster-3d-3.jpg");
+background-size: cover;
+}
+
+#video4{
+background:url("https://mrmoviefiend.files.wordpress.com/2010/06/inception-poster-10.jpg");
+background-size: cover;
+}
+
+#video5{
+background:url("https://cms-assets.tutsplus.com/uploads/users/71/posts/14079/final_image/final_large3.jpg");
+background-size: cover;
+}
+
+#video6{
+background:url("https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/58e0552f1b10e31ed455ed48/1491096886359/?format=2500w");
+background-size: cover;
+}
+
+.video-boxes h4{
+  font-family: helvetica;
+  font-size: 30px;
+  margin:0;
+  color: white;
+}
+
+.video-boxes p{
+  color: white;
+}
+
+//for mobile
+
+@media screen and (max-width: 600px){
+  .video-boxes{
+    width: 95%;
+    margin: 2.5%;
+  }
+
+  .video-boxes h4{
+    font-size:20px;
+    font-family:helvetica;
+    font-weight:100;
+  }
+
+  .video-boxes p{
+    display: block;
+    font-size:40px;
+    font-family:helvetica;
+    font-weight:20;
+  }
+}
